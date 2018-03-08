@@ -1,0 +1,59 @@
+#container{
+    min-width: 500px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 15px;
+    border: none;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+h1{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    color: black;
+}
+
+button{
+    margin-top: 20px;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+}
+button:focus{
+    outline: none;
+}
+button#validate{
+    background-color: #843D55;
+    color: white;
+}
+
+.message{
+    width: 100%;
+    color: white;
+    padding: 5px;
+    font-family: sans-serif;
+    transition: background-color 0.5s ease;
+}
+.message.valid{
+    background-color: #56A25D;
+}
+.message.invalid{
+    background-color: #BA4425;
+}
+
+.neutral{
+    border: 2px solid #843D55;
+    transition: box-shadow 0.5s ease;
+}
+.neutral.valid{
+    box-shadow: 0px 0px 20px #56A25D;
+    border: 2px solid #56A25D;
+}
+
+.neutral.invalid{
+    box-shadow: 0px 0px 20px #BA4425;
+    border: 2px solid #BA4425;
+}

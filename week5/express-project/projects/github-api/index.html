@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Github repos</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+            <h1>Github Repo Search</h1>
+            <div id="loginForm">
+                <form method="post">
+                    <input type="text" name="user" placeholder="Username..">
+                    <input type="password" name="pass" placeholder="Password...">
+                    <input type="text" name="repository-owner" placeholder="Repos...">
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+            <div id="results">
+            </div>
+        </div>
+        <script id="reposList" type="text/x-handlebars-template">
+            {{#repo}}
+                <div class="result">
+                    <div class="owner">
+                        {{#owner}}
+                        <img src="{{avatar}}">
+                        <a href="{{profile}}" class="login">{{login}}</a>
+                        {{/owner}}
+                    </div>
+                    <div class="repo">
+                        <h2><a href="#" class="requestCommits">{{repoName}}</a></h2>
+                        <p>{{repoDescription}}</p>
+                        <div class="commits">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            {{/repo}}
+        </script>
+
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</html>

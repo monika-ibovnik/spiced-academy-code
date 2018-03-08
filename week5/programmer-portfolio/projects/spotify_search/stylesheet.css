@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: SkyBlue;
+}
+
+#container{
+    width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+header{
+    font-family: Bitter, serif;
+    font-size: 25px;
+    padding: 10px;
+}
+main h2{
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+
+form{
+    width: 100%;111
+    margin: auto;
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-family: Bitter, serif;
+    font-size: 14px;
+    background-color: white;
+}
+#spotifySearch{
+    width: 250px;
+}
+input[type="radio"]{
+    margin-left: 15px;
+}
+.btn{
+    background-color: grey;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    margin-left: 20px;
+    font-family: Bitter, serif;
+}
+#searchResults{
+    text-align: left;
+    margin-bottom: 30px;
+    /*padding: 0px 10px 10px 10px;*/
+}
+
+#result{
+    border-bottom: 1px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    background-color: MintCream;
+}
+img{
+    width: 150px;
+    height: 150px;
+    vertical-align: middle;
+}
+
+a{
+    text-decoration: none;
+    font-family: Bitter, serif;
+    font-size: 17px;
+    padding-left: 50px;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+#more{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}

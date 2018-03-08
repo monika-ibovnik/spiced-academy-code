@@ -1,0 +1,35 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+div#search{
+    margin: auto;
+    width: 300px;
+}
+input{
+    width: 302px;
+    font-size: 14px;
+    padding: 5px;
+}
+#results{
+    width: 300px;
+    border: 1px solid #ccc;
+}
+#results div{
+    color: #333;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 10px 5px 10px 8px;
+}
+.highlight{
+    background-color: #ccc;
+}
+p{
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    color: LightGrey;
+}

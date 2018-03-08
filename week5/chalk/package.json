@@ -1,0 +1,14 @@
+{
+  "name": "chalk-console",
+  "version": "1.0.0",
+  "description": "a colorful console",
+  "main": "index.js",
+  "scripts": {
+    "test": "try this out"
+  },
+  "author": "Lolcat",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.3.0"
+  }
+}

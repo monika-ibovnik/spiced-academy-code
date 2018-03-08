@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Handlebars Project</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <div id="container"></div>
+        <script id="authors" type="text/x-handlebars-template">
+            <h1>Authors</h1>
+            {{#authors}}
+                <div class="authorBlock">
+                    <img src="{{photo}}">
+                    <div class="authorInfo">
+                        <h2>{{name}}</h1>
+                        <p>Born: {{born}}</p>
+                        <p>Died: {{died}}</p>
+                        <h3>Selected writings:</h3>
+                        <ul>
+                            {{#each selectedWritings}}
+                            <li>{{.}}</li>
+                            {{/each}}
+                        </ul>
+                        <h3>Famous quote</h3>
+                        <blockquote>{{quote}}</blockquote>
+                    </div>
+                </div>
+                {{/authors}}
+            </div>
+        </script>
+
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</html>

@@ -1,0 +1,100 @@
+#container{
+    width: 400px;
+    height: 500px;
+    position: relative;
+}
+
+#head{
+    width: 100px;
+    height: 100px;
+    top:0;
+    left:50%;
+    transform: translate(-50%, 0);
+    position: absolute;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+#rightarm{
+    height: 3px;
+    width: 120px;
+    position: absolute;
+    top: 0;
+    left:0;
+    background-color: black;
+    transform: rotate(-35deg) translate(86px,204px);
+}
+
+#leftarm{
+    height: 123px;
+    width: 3px;
+    position: absolute;
+    top: 0;
+    left:0;
+    background-color: black;
+    transform: rotate(125deg) translate(-39px,-152px);
+}
+
+#rightleg{
+    height: 3px;
+    width: 120px;
+    position: absolute;
+    top: 0;
+    left:0;
+    background-color: black;
+    transform: rotate(45deg) translate(337px,78px);
+}
+
+#leftleg{
+    height: 3px;
+    width: 120px;
+    position: absolute;
+    top: 0;
+    left:0;
+    background-color: black;
+    transform: rotate(-45deg) translate(-137px,276px);
+}
+
+
+#torso{
+    width: 3px;
+    height: 150px;
+    background-color: black;
+    position: absolute;
+    top:103px;
+    left:50%;
+    transform: translate(-50%, 0);
+}
+
+#lefteye{
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(177px,44px);
+}
+
+#righteye{
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(210px,44px);
+}
+
+#mouth{
+    width: 50px;
+    height: 25px;
+    border-bottom-right-radius: 75px;
+    border-bottom-left-radius: 75px;
+    border: 3px solid black;
+    border-top: 0px;
+    transform: translate(170px,60px);
+
+}

@@ -1,0 +1,17 @@
+main{
+    width: 100%;
+    text-align: center;
+}
+
+#big{
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+}
+
+#small{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+}

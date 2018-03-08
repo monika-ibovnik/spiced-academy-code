@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+#container{
+    width: 800px;
+    margin: auto;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    padding: 0px 20px 30px 20px;
+}
+.authorBlock{
+    margin-top: 30px;
+}
+.authorInfo{
+    display:inline-block;
+    margin-left: 20px;
+}
+img{
+    vertical-align: top;
+    width: 200px;
+}
+
+h1{
+    font-family: Georgia, serif;
+    font-size: 60px;
+    text-align: center;
+}

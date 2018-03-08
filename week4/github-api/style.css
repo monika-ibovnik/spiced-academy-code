@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#container{
+    max-width: 800px;
+    margin: 0;
+}
+h1{
+    font-family: Bungee, cursive;
+    font-size: 20px;
+    text-align: center;
+}
+#loginForm{
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+.result{
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+.owner{
+    position: relative;
+    width: 100px;
+    display: inline-block;
+}
+img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+.login{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    background-color: rgba(255,255,255,.2);
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    padding-top:3px;
+    padding-bottom: 3px;
+}
+.repo{
+    display: inline-block;
+    width: 650px;
+}
+
+h2 a{
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+}
+
+h2 a:hover{
+    color: blue;
+}

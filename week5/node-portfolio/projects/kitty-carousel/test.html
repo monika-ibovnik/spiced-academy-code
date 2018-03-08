@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>test</title>
+        <style media="screen">
+            #wrapper{
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+                display:block;
+            }
+            #cat{
+                width:800px;
+                height:600px;
+                background-image: url('img/kit2.jpg');
+                background-size: contain;
+                transform: translate(-100%);
+                transition: transform 1s ease-in;
+            }
+            #cat.active{
+                transform: translateX(0);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper"></div>
+        <div id='cat'></div>
+    </body>
+    <script type="text/javascript">
+        var div = document.querySelector('#wrapper');
+        var img = document.querySelector('#cat');
+        div.addEventListener('click', function(e){
+            img.classList.add('active');
+            console.log('fire!');
+        });
+    </script>
+</html>

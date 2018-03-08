@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    width: 800px;
+    height: 600px;
+    position: relative;
+}
+
+#dog{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("img/doggy.png");
+    background-size: cover;
+}
+
+#cat{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("img/kitty.jpg");
+    background-size: cover;
+}
+
+#bar{
+    height: 100%;
+    width: 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #b12a2a;
+}

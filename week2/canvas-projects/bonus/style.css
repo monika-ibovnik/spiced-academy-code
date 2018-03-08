@@ -1,0 +1,6 @@
+#destination{
+    border: 2px dotted red;
+}
+#source{
+    visibility: hidden;
+}

@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 500px;
+}
+
+#everything{
+    overflow:hidden;
+    position:relative;
+}
+
+nav{
+    position: absolute;
+    top:0;
+    right:0;
+    background-color: white;
+    height: 100%;
+    width: 200px;
+    padding-left: 10px;
+    z-index: 3;
+    filter: drop-shadow(2px 0px 20px grey);
+}
+.hidden{
+    transform: translateX(120%);
+    transition: transform .5s ease-out;
+}
+
+.hidden.active{
+    transform: translateX(0%);
+}
+#exitClick{
+    float: right;
+    text-align: right;
+    text-decoration: none;
+    font-family: Arial,sans-serif;
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    color: #999;
+    cursor: pointer;
+}
+
+nav ul{
+    list-style: none;
+}
+li a{
+    color: DodgerBlue;
+    text-decoration: none;
+    font-size: 26px;
+    display: block;
+    padding: 10px 50px 10px 50px;
+}
+
+#logout{
+    text-decoration: none;
+    color: DodgerBlue;
+    width: 100%;
+    display: block;
+    padding: 20px 50px;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    padding: 10px 10px 20px 10px;
+    margin-bottom: 20px;
+}
+
+header img{
+    height: 50px;
+}
+
+#sprint-logo{
+    float: left;
+}
+
+#hamburgermenu{
+    float: right;
+    cursor: pointer;
+}
+
+#splash{
+    position: relative;
+}
+
+#splash img{
+    vertical-align: bottom;
+    width: 100%;
+}
+#welcome{
+    text-align: center;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+#welcome h1{
+    color: white;
+    font-style: italic;
+    font-size: 25px;
+}
+button{
+    font-family: Georgia, serif;
+    font-weight: bold;
+    color: chocolate;
+    font-size: 22px;
+    padding: 10px 50px 10px 50px;
+    background-color: Gold;
+    border: 3px solid chocolate;
+    border-radius: 25px;
+    margin-top: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+#overlay{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 11, 42, 0.5);
+    position: absolute;
+}
+main{
+    background-color: #cccccc;
+}
+#infos{
+    margin: auto;
+    max-width: 1200px;
+    padding: 0px 30px 30px 30px;
+    margin: auto;
+}
+
+.select{
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    padding: 0px 30px 0px 65px;
+    width: 100%;
+    display: inline-block;
+    min-width: 400px;
+    max-width: 450px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.select h2{
+    font-size: 18px;
+}
+.select p{
+    font-size: 16px;
+}
+
+#cat{
+    background-image: url(img/cat.svg);
+}
+#swim{
+    background-image: url(img/swim.svg);
+}
+#world{
+    background-image: url(img/world.svg)
+}
+#column{
+    background-image: url(img/column.svg);
+}
+footer{
+    padding: 5px 30px;
+    color: white;
+    background-color: #666666;
+}
+#container-overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.cover{
+    visibility: hidden;
+    background-color: rgba(0,0,0,0);
+    transition: background-color .5s ease-in;
+}
+.cover.visible{
+    visibility: visible;
+    background-color: rgba(0,0,0, .5);
+}
+.cover.modal{
+    visibility: visible;
+    background-color: rgba(0,0,0, .5);
+}
+#modal{
+    background-color: white;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    padding: 20px;
+    filter: drop-shadow(2px 0px 20px black);
+    padding: 40px 50px 50px 50px;
+    border: 2px solid gray;
+    visibility: hidden;
+    min-width: 440px;
+    max-width: 500px;
+}
+
+#modal h2{
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#modalX{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media screen and (min-width:480px) and (max-width:600px){
+    body{
+        width: 100%;
+    }
+    .select{
+        background-size: 50px 50px;
+        padding: 0px 30px 0px 65px;
+        width: 100%;
+        display: block;
+        max-width: 320px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:480px){
+    body{
+        height: 100%;
+    }
+
+    header{
+        margin-bottom: 10px;
+    }
+    header img{
+        height: 40px;
+    }
+    button{
+        font-size: 14px;
+        padding: 10px 20px 10px 20px;
+        border: 2px solid chocolate;
+        border-radius: 25px;
+        margin-top: 20px;
+    }
+
+    .select{
+        background-size: 50px 50px;
+        padding: 0px 30px 0px 65px;
+        width: 100%;
+        display: block;
+        min-width: 180px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    #modal{
+        min-width: 300px;
+    }
+}

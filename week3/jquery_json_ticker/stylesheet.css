@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#dogeTicker{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+}
+
+#dogeTicker a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px 5px 20px;
+}
+
+#dogeTicker a:hover{
+    color: blue;
+}
